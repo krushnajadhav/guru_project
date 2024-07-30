@@ -1,19 +1,16 @@
 <?php
+// Database connection parameters
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "doctors";
 
-$host = "localhost";
-$username = "id20905494_root";
-$password = "Kj@123456789";
-$dbname = "id20905494_registration";
-$conn = mysqli_connect("localhost","id20905494_root","Kj@123456789","id20905494_registration");
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-
-if($conn)
-{
-    
-}
-else
-{
-    echo "Connection Faild".mysqli_connect_error();
-}
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
 
 ?>

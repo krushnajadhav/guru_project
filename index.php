@@ -10,16 +10,15 @@
   include("header.php");
 ?>
 
-<div class="row">
+<div class="row ">
+            <div class="col-lg-3 " >
+                <div class="sidebar" style="width:15%; background-color: #E5E5E5;padding-left: 18px">
+                    <?php include("sidebar.php"); ?>
+                </div>
+            </div>
 
-  <div class="w3-sidebar w3-bar-block" style="width:15% ; background-color: #E5E5E5;">
-    <?php
-    include("sidebar.php"); 
-    ?>
-  </div>
-
-  <div class="container text-center" style="background-color: white;padding:100px" >
-      <div class="container " >
+    <div class="col-lg-9"  >
+      <div class="container text-center" style="background-color: white;padding:100px">
 
         <li style="color: Orange; font-size: 30px; font-style: italic; font-weight: bold;"><i>View Doctors details</i></li>
         <hr>  
@@ -83,6 +82,8 @@
 
       </div>
   </div>
+</div>
+
   
 </div>
 <script>
